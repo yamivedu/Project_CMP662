@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Registration</title>
+</head>
+	<body background="images/bg1.jpg" align="center">
+	
+		<script>
+			function getName(){
+				var alphaExp = /^[a-zA-Z ]+$/;
+							if(document.myForm.Name.value.match(alphaExp))
+							{
+							return true;
+							}
+						else
+						{
+							alert("Please provide your name, name must not contain numeric digits or special characters. Kindly recheck")
+							return false;
+							}
+			}
+			function getState(s){}
+			function getZip(){
+				
+				var numExp = /^[0-9]+$/;
+							if(document.myForm.Zip.value.match(numExp) && document.myForm.Zip.value.length==5)
+							{
+							 return true;
+							 }
+							 else
+							   if(document.myForm.Zip.value.match(numExp) && document.myForm.Zip.value.length!=5){
+								alert("Please enter five digit zip code");
+							   }
+							   else
+							 {
+								alert("Please enter valid Zip code")
+								return false;
+						}
+			}
+			//Form Validation
+				function validateForm()
+					{
+						getName();
+						getZip();
+						alert(validateZip);
+						{
+							var alphaExp = /^[a-zA-Z]+$/;
+							if(document.myForm.Name.value!=alphaExp)
+							{
+							return true;
+							}
+						else
+						{
+							alert("Please provide your name, name must not contain numeric digits or special characters. Kindly recheck")
+							return false;
+							}
+							}
+						{
+							var numExp = /^[0-9]+$/;
+							if(document.myForm.Zip.value==numExp)
+							{
+							 return true;
+							 }
+							 else
+							 {
+								alert("Please enter valid Zip code")
+								return false;
+						}
+						}	
+				}
+			
+			</script>
+				<form name="myForm" onsubmit="return(validateForm());">
+						<table cellspacing="2" cellpadding="2" border="3">
+							<tr>
+								<td align="right">Name</td>
+								<td><input type="text" name="Name"
+								onChange="getName()"/></td>
+							</tr>
+							
+							<tr>
+								<td align="right">Zip Code</td>
+								<td><input type="text" name="Zip"
+								onChange="getZip()"/></td>
+							</tr>
+							<tr>
+								<td align="right">State</td>
+								<td>
+									<select name="State" onChange="getState(value)">
+									<option value="-1" selected>[choose yours]</option>
+									<option value="Alabama">Alabama</option>
+									<option value="California">California</option>
+									<option value="Connecticut">Connecticut</option>
+									<option value="Delaware">Delaware</option>
+									<option value="Florida">Florida</option>
+									<option value="Hawaii">Hawaii</option>
+									<option value="Illinois">Illinois</option>
+									<option value="Indiana">Indiana</option>
+									<option value="Lowa">Lowa</option>
+									<option value="Maryland">Maryland</option>
+									<option value="Massachusetts">Massachusetts</option>
+									<option value="Michigan">Michigan</option>
+									<option value="Minnesota">Minnesota</option>
+									<option value="New Jersey">New Jersey</option>
+									<option value="New York">New York</option>
+									<option value="North Carolina">North Carolina</option>
+									<option value="Ohio">Ohio</option>
+									<option value="Pennsylvania">Pennsylvania</option>
+									<option value="Rhode Island">Rhode Island</option>
+									<option value="South Carolina">South Carolina</option>
+									<option value="Tennessee">Tennessee</option>
+									<option value="Texas">Texas</option>
+									<option value="Virginia">Virginia</option>
+									<option value="Washington">Washington</option>
+									<option value="Wisconsin">Wisconsin</option>
+									<option value="Wyoming">Wyoming</option>
+									
+									</select>
+								</td>
+							</tr>
+							<tr>
+							<td align="right"></td>
+							<td><input type="submit" value="Submit" /></td>
+							</tr>
+						</table>
+			</form>
+		</body>
+</html>	

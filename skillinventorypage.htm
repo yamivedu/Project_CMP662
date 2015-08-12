@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title>Welcome To Skill Inventory Page for Java Developer</title>
+	</head>
+	<body background="images/bg1.jpg" align="center"><br>
+	
+		<table>
+			<tr> 
+				<img src="images/second.jpg" align="left" height=90 width=35%>
+			</tr>
+			<tr>
+				<h1 align="center">
+					<font>
+					<script>
+						document.write("Welcome To Skill Inventory Page For JAVA Developer<br><br>");
+					</script></font>
+				</h1>
+			</tr>
+		</table>
+		<script>
+			document.write("<br><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKindly fill the following details.</b>");
+		</script>
+		<form METHOD=POST ACTION="http://localhost:9091/FinalExam/inventory">
+			<table cellspacing="10" cellpadding="10" width=40%>
+				<tr>
+					<td align="right"><b>Full Name:</b></td>
+					<td><input type="text" name="Full Name"/></td>
+				</tr>
+				<tr>
+					<td align="right"><b>Address:</b></td>
+					<td><input type="text" name="Address"/></td>
+				</tr>
+				<tr>
+					<td align="right"><b>SSN</b></td>
+					<td><input type="text" name="SSN"/></td>
+				</tr>
+				<tr>
+					<td align="right"><b>Visa Status</b></td>
+					<td>
+						<select name="Visa Status">
+							<option value="-1" selected>[choose yours]</option>
+							<option value="H1B">H1B</option>
+							<option value="OPT">OPT</option>
+							<option value="EAD">EAD</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="right"><b>Citizen of USA</b></td>
+					<td><input type="radio" name="citizen" value="Yes"/>Yes</td>
+					<td><input type="radio" name="citizen" value="No"/>No</td>
+				</tr>
+				<tr>
+					<td align="right"><b>Qualifications</b></td>
+					<td>
+						<select name="Qualifications">
+							<option value="-1" selected>[choose yours]</option>
+							<option value="Bachelor's degree">Bachelor's degree</option>
+							<option value="Master's Degree">Master's Degree</option>
+							<option value="Phd">Phd</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="right"><b>Experience</b></td>
+					<td>
+						<select name="Experience">
+							<option value="-1" selected>[choose yours]</option>
+							<option value="<5"><5</option>
+							<option value="<10"><10</option>
+							<option value="<15"><15</option>
+							<option value=">15">>15</option>
+					    </select>
+					</td>
+				</tr>
+			</table>
+			<h2 align="center">
+			<script>
+				document.write("Skill Inventory for JAVA Developer<br><br>");
+			</script>
+			</h2>
+			<table>
+				<th>Kindly select your skills in the mentioned categories,<br><br></th>
+					<tr>
+						<td align="right"><b>JAVA Technologies:<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+						<td> <input type="checkbox" name="Java" value="JavaEE">JavaEE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="Java" value="JSF">JSF&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="Java" value="Richfaces">Richfaces&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					</tr>
+					<tr>
+						<td align="right"><b>Markup Languages:<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+						<td> <input type="checkbox" name="markup" value="HTML">HTML&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="markup" value="XML">XML&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="markup" value="DHTML">DHTML&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="markup" value="XHTML">XHTML&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="markup" value="CSS">CSS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					</tr>
+					<tr>
+						<td align="right"><b>Frameworks:<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+						<td> <input type="checkbox" name="framework" value="Hibernate">Hibernate&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="framework" value="Selenium">Selenium&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="framework" value="Seam">Seam&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="framework" value="TestNG">TestNG&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					</tr>
+					<tr>
+						<td align="right"><b>Programming Languages:<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+						<td> <input type="checkbox" name="programming" value="Java">Java&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="programming" value="JavaScript">JavaScript&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="programming" value="SQL">SQL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					</tr>
+					<tr>
+						<td align="right"><b>Web Services:<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+						<td> <input type="checkbox" name="webservices" value="SOAP">SOAP&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="webservices" value="WMS">WMS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+						<td> <input type="checkbox" name="webservices" value="WFS">WFS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					</tr>
+					<tr>
+						<td>
+						<INPUT TYPE=SUBMIT VALUE="Submit"></td>
+					</tr>
+			</table>
+		</form>
+	</body>
+</html>
+			
+		
+		
+		
+	
+	
